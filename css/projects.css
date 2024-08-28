@@ -1,0 +1,219 @@
+        /*
+        * Globals
+        */
+
+        /* Links */
+        a,
+        a:focus,
+        a:hover {
+        color: black;
+        }
+
+        /* Custom default button */
+        .btn-secondary,
+        .btn-secondary:hover,
+        .btn-secondary:focus {
+        color: #333;
+        text-shadow: none; /* Prevent inheritance from `body` */
+        background-color: black;
+        border: 1px solid #fff;
+        }
+
+
+        /*
+        * Base structure
+        */
+
+        html,
+        body {
+        height: 100%;
+        background-color: home;
+        font-family: 'Montserrat';
+        }
+
+        body {
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: flex;
+        -ms-flex-pack: center;
+        -webkit-box-pack: center;
+        color: black;
+
+        }
+
+        .cover-container {
+        max-width: 95%;
+        }
+
+
+        /*
+        * Header
+        */
+        .masthead {
+        margin-bottom: 2rem;
+        }
+
+        .masthead-brand {
+        margin-bottom: 0;
+        }
+
+        .nav-masthead .nav-link {
+        padding: .25rem 0;
+        color: black;
+        background-color: transparent;
+        border-bottom: 2px solid transparent;
+        }
+
+        .nav-masthead .nav-link:hover,
+        .nav-masthead .nav-link:focus {
+        border-bottom-color: black;
+        }
+
+        .nav-masthead .nav-link + .nav-link {
+        margin-left: 1rem;
+        font-family: 'Montserrat';
+        }
+
+        .nav-masthead .active {
+        color: black;
+        border-bottom-color: black;
+        }
+
+        @media (min-width: 48em) {
+        .masthead-brand {
+            float: left;
+        }
+        .nav-masthead {
+            float: right;
+        }
+        }
+
+
+        /*
+        * Cover
+        */
+        .cover {
+        padding: 0 1.5rem;
+        }
+        .cover .btn-lg {
+        padding: .75rem 1.25rem;
+        font-weight: 700;
+        }
+
+
+        /*
+        * Footer
+        */
+        .mastfoot {
+        color: rgba(255, 255, 255, .5);
+        }
+
+        * {
+          box-sizing: border-box;
+        }
+  
+        /* Add padding BETWEEN each column */
+        .row,
+        .row > .column {
+          padding: 8px;
+        }
+  
+        /* Create three equal columns that floats next to each other */
+        .column {
+          float: left;
+          width: 33.33%;
+          display: none; /* Hide all elements by default */
+        }
+  
+        /* Clear floats after rows */ 
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+  
+        /* Content */
+        .content {
+          padding: 5px;
+        }
+  
+        /* The "show" class is added to the filtered elements */
+        .show {
+          display: block;
+        }
+  
+        /* Style the buttons */
+        .btn {
+          border: none;
+          outline: none;
+          background-color: none;
+          color: black;
+          cursor: pointer;
+          font-size: 18px;
+        }
+  
+        .btn:hover {
+          color: black;
+          background-color: transparent;
+          font-weight: 700;
+        }
+  
+        .btn.active {
+          font-weight: 900;
+        }
+  
+        .item-box {
+          position: relative;
+          overflow: hidden;
+          display: block;
+          }
+  
+        .item-box a {
+          display: inline-block;
+          }
+  
+        .item-box .item-mask {
+          background: none repeat scroll 0 0 rgba(255, 255, 255, 0.9);
+          position: absolute;
+          transition: all 0.5s ease-in-out 0s;
+          -moz-transition: all 0.5s ease-in-out 0s;
+          -webkit-transition: all 0.5s ease-in-out 0s;
+          -o-transition: all 0.5s ease-in-out 0s;
+          top: 10px;
+          left: 10px;
+          bottom: 10px;
+          right: 10px;
+          opacity: 0.33;
+          visibility: hidden;
+          overflow: hidden;
+          text-align: center;
+          }
+  
+        .item-box .item-mask .item-caption {
+          position: absolute;
+          width: 100%;
+          bottom: 10px;
+          opacity: 0;
+          }
+  
+        .item-box:hover .item-mask {
+          opacity: 1;
+          visibility: visible;
+          cursor: pointer !important;
+          }
+  
+        .item-box:hover .item-caption {
+          opacity: 1;
+          }
+  
+        .item-box:hover .item-container {
+          width: 100%;
+          }
+  
+        hr {
+          margin-top: 20px;
+          margin-bottom: 20px;
+          border: 0;
+          border-top: 1px solid black;
+          width: 100%;
+        }
