@@ -27,7 +27,7 @@
                 </a>
                 <nav class="nav nav-masthead navbar-right">
                     <a class="nav-link" href="about_me.html">ABOUT ME</a>
-                    <a class="nav-link" href="projects.php">PORTFOLIO</a>
+                    <a class="nav-link" href="projects.html">PORTFOLIO</a>
                     <a href="resume_nw.pdf" class='download nav-link' download="nevaeh_williams_resume">RESUME</a>
                 </nav>
             </div>
