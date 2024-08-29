@@ -22,17 +22,18 @@
 
   <body>
     <div class="cover-container d-flex h-100 p-3 flex-column">
-      <header class="masthead mb-auto">
-        <div class="inner justify-content-center pt-2">
-          <h3 class="masthead-brand ml-5" href="index.html">NEVAEH WILLIAMS</h3>
-          <nav class="nav nav-masthead navbar-right">
-              <a class="nav-link active" href="about_me.php">ABOUT ME</a>
-              <a class="nav-link" href="projects.php">PORTFOLIO</a>
-              <a class="nav-link" href="index.html">HOME</a>
-              <a href="resume_nw.pdf" class='download nav-link' download="nevaeh_williams_resume">RESUME</a>
-          </nav>
-        </div>
-      </header>
+    <header class="masthead mb-auto">
+            <div class="inner justify-content-center pt-2">
+                <a href="index.html">
+                  <img src="images/name.PNG" class="masthead-brand" style="height: 50px; margin-top: -10px;"></img>
+                </a>
+                <nav class="nav nav-masthead navbar-right">
+                    <a class="nav-link" href="about_me.php">ABOUT ME</a>
+                    <a class="nav-link" href="projects.php">PORTFOLIO</a>
+                    <a href="resume_nw.pdf" class='download nav-link' download="nevaeh_williams_resume">RESUME</a>
+                </nav>
+            </div>
+        </header>
 
           <div class="row d-flex h-100 p-4 justify-content-center mt-5">
             <div class="col-6">
