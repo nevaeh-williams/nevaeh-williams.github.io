@@ -13,7 +13,7 @@
         html,
         body {
         height: 100%;
-        background-color: #e4eee6;
+        background-color: white;
         font-family: 'Montserrat';
         }
 
@@ -37,20 +37,38 @@
             margin-top: 10px;
         }
 
-        #home-page-image {
-            margin-top: 50px;
-        }
-
         #home-page-greeting {
             font-weight: 800;
-            font-size: 30px;
+            font-size: 36px;
+            text-align: center;
+        }
+
+        #home-page-text {
+            padding-left: 5%;
         }
 
         #home-page-pg {
-            font-size: 16px;
+            font-size: 18px;
+            text-align: center;
         }
+
+        #home-page-image {
+            height: 150px; 
+            width: 95%;
+            margin: 0;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            padding-left: 5%;
+            
+        }
+
         
         @media (min-width: 992px) {
+        html,
+        body {
+            background-color: #e4eee6;
+            }
+
         body {
         display: -ms-flexbox;
         display: -webkit-box;
@@ -124,23 +142,26 @@
         }
 
         #home-page-text {
-            padding-top: 12%;
+            padding-top: 10%;
             padding-left: 8%;
         }
 
         #home-page-greeting {
             font-weight: 800;
             font-size: 50px;
+            text-align: left;
         }
 
         #home-page-pg {
             font-size: 22px;
+            text-align: left;
         }
 
         #home-page-image {
-            height: 650px; 
-            width: 1100px;
+            height: 630px; 
+            width: 400px;
             margin: 0;
+            padding-left: 5px;
         }
         /*
         * Footer
@@ -149,3 +170,15 @@
         color: rgba(255, 255, 255, .5);
         }
     }
+
+    @media only screen and (min-width: 992px) {
+        .mobile-only {
+            display:none !important;
+        }
+    } 
+
+    @media only screen and (max-width: 1026px) {
+        .desktop-only {
+            display:none !important;
+        }
+    } 
