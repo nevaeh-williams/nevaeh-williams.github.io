@@ -1,7 +1,7 @@
         /*
         * Globals
         */
-
+        @media (min-width: 992px) {
         /* Links */
         a,
         a:focus,
@@ -107,3 +107,4 @@
         .mastfoot {
         color: rgba(255, 255, 255, .5);
         }
+    }
