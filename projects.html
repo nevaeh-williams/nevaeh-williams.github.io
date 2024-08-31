@@ -20,7 +20,27 @@
 
   <body>
     <div class="cover-container d-flex h-100 p-3 flex-column">
-      <header class="masthead mb-auto">
+
+      <div class="mobile-only" id="mobile-about">
+        <header class="masthead mb-auto">
+          <div id="nav-block">
+            <p>.</p>
+          </div>
+              <div class="inner justify-content-center pt-2">
+                  <a href="index.html">
+                    <img src="images/name.PNG" class="masthead-brand" style="height: 50px; margin-top: -10px;"></img>
+                  </a>
+                  <nav class="nav nav-masthead navbar-right">
+                      <a class="nav-link" href="about_me.html">ABOUT ME</a>
+                      <a class="nav-link" href="projects.html">PORTFOLIO</a>
+                      <a href="resume_nw.pdf" class='download nav-link' download="nevaeh_williams_resume">RESUME</a>
+                  </nav>
+              </div>
+          </header>
+        </div>
+
+        <div class="desktop-only">
+          <header class="masthead mb-auto">
             <div class="inner justify-content-center pt-2">
                 <a href="index.html">
                   <img src="images/name.PNG" class="masthead-brand" style="height: 50px; margin-top: -10px;"></img>
@@ -31,25 +51,31 @@
                     <a href="resume_nw.pdf" class='download nav-link' download="nevaeh_williams_resume">RESUME</a>
                 </nav>
             </div>
-        </header>
+          </header>
+          </div>
         
         <div class="main pb-5 mb-5">
-
-          <div class="row d-flex h-100 mt-5 ml-5">
+          <div class="row d-flex mt-5" id="filter-buttons">
             <div class="col-lg" style="text-align: center;">
               <h1 class="pb-1">PORTFOLIO</h1>
-              <div id="myBtnContainer">
+              <div class="mobile-intro mobile-only">
+                <p>A collection invloving personal artworks, developed web applications, and freelance work.</p>
+              </div>
+
+              <div class="desktop-only" id="myBtnContainer">
                 <button class="btn active" onclick="filterSelection('all')">All</button>
                 <button class="btn" onclick="filterSelection('web')">Web Development</button>
                 <button class="btn" onclick="filterSelection('freelance')">Freelance</button>
                 <button class="btn" onclick="filterSelection('personal')">Personal Projects</button>
                 <button class="btn" onclick="filterSelection('mca')">McAlister's Deli</button>
               </div>
+            </div>
+          </div>
 
               <hr/>
 
               <!-- Portfolio Gallery Grid -->               
-              <div class="row">
+              <div class="row" id="gallery">
                  <!--FREELANCE-->
                  <div class="column freelance">
                   <div class="item-box">
@@ -458,28 +484,47 @@
               <!-- END GRID -->
               </div>
             </div>
-          </div>
-        </div>
 
-        <div class="container mt-5 pt-5 pl-5 text-center" style="margin-top: 300px;">
-          <footer class="py-3 my-3">
-              <div class="border-bottom" style="margin-bottom: 0px;">
-                <h3 class="text-center" style="font-size: 32px; margin-bottom: 5px;">Let's Connect</h3>
-                <div class="row justify-content-center" style="margin-bottom: -5px;">
-                  <div class="col-2">
-                    <a class="lead" href= "mailto: nevwilli@iu.edu" style="font-size: 18px;">Get in Touch</a>
+
+            <div class="container text-center mobile-only">
+              <footer>
+                  <div class="border-bottom">
+                    <h3 class="text-center" style="font-size: 28px; margin-bottom: 15px;">Let's Connect</h3>
+                    <div class="row justify-content-center" style="margin-bottom: -5px;">
+                      <div class="col-5">
+                        <a class="lead" href= "mailto: nevwilli@iu.edu" style="font-size: 16px;">Get in Touch</a>
+                      </div>
+                      <div class="col-1" style="margin-left: -15px; margin-right: -15px;">
+                        <p>•</p>
+                      </div>
+                      <div class="col-5">
+                        <a class="lead" href= "https://www.linkedin.com/in/nevaeh-williams-767a5518a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B6QZaa7IJQ42sOm3w1eNPgw%3D%3D" style="font-size: 16px;">My LinkedIn</a>
+                      </div>
+                    </div>
                   </div>
-                  <div class="col-1" style="margin-left: -70px; margin-right: -70px;">
-                    <p>•</p>
+                  <p class="text-center lead pt-3" style="font-size: 16px;">© Nevaeh Williams</p>
+                </footer>
+            </div>
+
+            <div class="container mt-5 pt-5 pl-5 text-center desktop-only" style="margin-top: 300px;">
+              <footer class="py-3 my-3">
+                  <div class="border-bottom" style="margin-bottom: 0px;">
+                    <h3 class="text-center" style="font-size: 32px; margin-bottom: 15px;">Let's Connect</h3>
+                    <div class="row justify-content-center" style="margin-bottom: -5px;">
+                      <div class="col-2">
+                        <a class="lead" href= "mailto: nevwilli@iu.edu" style="font-size: 18px;">Get in Touch</a>
+                      </div>
+                      <div class="col-1" style="margin-left: -70px; margin-right: -70px;">
+                        <p>•</p>
+                      </div>
+                      <div class="col-2">
+                        <a class="lead" href= "https://www.linkedin.com/in/nevaeh-williams-767a5518a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B6QZaa7IJQ42sOm3w1eNPgw%3D%3D" style="font-size: 18px;">My LinkedIn</a>
+                      </div>
+                    </div>
                   </div>
-                  <div class="col-2">
-                    <a class="lead" href= "https://www.linkedin.com/in/nevaeh-williams-767a5518a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B6QZaa7IJQ42sOm3w1eNPgw%3D%3D" style="font-size: 18px;">My LinkedIn</a>
-                  </div>
-                </div>
-              </div>
-              <p class="text-center lead pt-3" style="font-size: 16px;">© Nevaeh Williams</p>
-            </footer>
-        </div>
+                  <p class="text-center lead pt-3" style="font-size: 16px;">© Nevaeh Williams</p>
+                </footer>
+            </div>
 
       </div>
 
