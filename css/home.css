@@ -1,11 +1,8 @@
-        /*
-        * Globals
-        */
         .btn-secondary,
         .btn-secondary:hover,
         .btn-secondary:focus {
         color: #333;
-        text-shadow: none; /* Prevent inheritance from `body` */
+        text-shadow: none;
         background-color: black;
         border: 1px solid #fff;
         }
@@ -130,9 +127,6 @@
             margin-top: 40px;
         }
 
-        /*
-        * Cover
-        */
         .cover {
         padding: 0 1.5rem;
         }
@@ -163,9 +157,7 @@
             margin: 0;
             padding-left: 5px;
         }
-        /*
-        * Footer
-        */
+
         .mastfoot {
         color: rgba(255, 255, 255, .5);
         }

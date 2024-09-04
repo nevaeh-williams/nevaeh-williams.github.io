@@ -1,11 +1,8 @@
-        /*
-        * Globals
-        */
         .btn-secondary,
         .btn-secondary:hover,
         .btn-secondary:focus {
         color: #333;
-        text-shadow: none; /* Prevent inheritance from `body` */
+        text-shadow: none;
         background-color: black;
         border: 1px solid #fff;
         }
@@ -126,8 +123,6 @@
                 border-top: 1px solid black;
                 width: 90%;
             }
-
-            
 
 
         }
